@@ -77,12 +77,12 @@ function handleGuess(val, btn) {
     feedbackEl.className   = 'feedback wrong';
   }
 
-  // Effacer le feedback après 400 ms
+  // Effacer le feedback après 2000 ms
   feedbackTimeout = setTimeout(() => {
     feedbackEl.textContent = '';
     feedbackEl.className   = 'feedback';
     allBtns.forEach(b => b.classList.remove('hit', 'miss'));
-  }, 400);
+  }, 2000);
 }
 
 // ── DÉMARRAGE DE LA PARTIE ──
@@ -101,8 +101,8 @@ function startGame() {
   // Premier nombre immédiat
   updateNumber();
 
-  // Changement de nombre toutes les 500 ms
-  numberInterval = setInterval(updateNumber, 500);
+  // Changement de nombre toutes les 2000 ms
+  numberInterval = setInterval(updateNumber, 2000);
 
   // Compte à rebours toutes les secondes
   timerInterval = setInterval(() => {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style3.css">
+    <title>JEU DES NOMBRES</title>
+
+</head>
+<body>
+    <p> page 3</p>
+    <!-- START SCREEN -->
+  <div class="screen active" id="startScreen">
+    <div class="logo">NOMBRE<br>RAPIDE</div>
+    <div class="tagline">Réflexes · Précision · Vitesse</div>
+    <button class="btn-start" id="btnStart">LANCER LE JEU</button>
+    <p class="start-hint">60 secondes — Sois le plus rapide</p>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div class="screen" id="gameScreen">
+    <div class="hud">
+      <div class="hud-block">
+        <span class="hud-label">Score</span>
+        <span class="hud-value" id="score">0</span>
+      </div>
+      <div class="hud-block" style="text-align:right">
+        <span class="hud-label">Temps</span>
+        <span class="hud-value timer" id="timer">60</span>
+      </div>
+    </div>
+
+    <div class="number-display-wrapper">
+      <div class="number-ring"></div>
+      <div class="number-display" id="currentNumber">—</div>
+    </div>
+
+    <div class="feedback" id="feedback"></div>
+
+    <div class="numpad" id="numpad"></div>
+  </div>
+
+  <!-- END SCREEN -->
+  <div class="screen" id="endScreen">
+    <div class="end-title">FIN DU JEU</div>
+    <div class="end-sub">La partie est terminée</div>
+    <div class="end-score-card">
+      <div class="end-score-label">Votre score</div>
+      <div class="end-score-value" id="finalScore">0</div>
+    </div>
+    <button class="btn-restart" id="btnRestart">REJOUER</button>
+  </div>
+
+
+    <script src="../js/script5.js"></script>
+</body>
+</html>

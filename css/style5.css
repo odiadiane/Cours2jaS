@@ -1,0 +1,13 @@
+#nombre{
+    text-align: center;
+}
+body{
+    position: relative;
+    display: flex;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 20px;
+}
